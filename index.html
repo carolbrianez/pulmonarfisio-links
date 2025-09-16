@@ -4,67 +4,87 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pulmonarfisio Links</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-        font-family: Arial, sans-serif;
+        font-family: 'Poppins', sans-serif;
         background: #f9f9fb;
         color: #222;
         text-align: center;
-        padding: 40px;
-        max-width: 500px;  
-        margin: auto;      
+        padding: 40px 20px;
+        max-width: 500px;
+        margin: auto;
     }
 
     img.logo {
       max-width: 180px;
       margin-bottom: 20px;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     }
+
     h1 {
       color: #8B73A8;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
+      font-size: 28px;
     }
-    p {
+
+    p.subtitulo {
       margin-bottom: 30px;
-      color: #555;
+      color: #666;
+      font-size: 16px;
     }
+
+    h2.cidade {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color: #444;
+      font-size: 18px;
+    }
+
     .btn {
       display: none;
-      margin: 12px auto;
+      margin: 10px auto;
       padding: 15px 20px;
       background: #8B73A8;
       color: #fff;
       border-radius: 9999px;
       text-decoration: none;
-      font-size: 18px;
-      font-weight: bold;
+      font-size: 16px;
+      font-weight: 600;
       width: 85%;
       max-width: 350px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      transition: all 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      display: block;
     }
+
     .btn:hover {
       background: #a08fc2;
       transform: translateY(-2px);
     }
+
   </style>
 </head>
 <body>
-  <!-- Logo -->
+
   <img src="logo.png" alt="Logo PulmonAR" class="logo">
 
   <h1>PulmonARfisio</h1>
-  <p>Reabilitação Pneumofuncional Pediátrica</p>
+  <p class="subtitulo">Reabilitação Pneumofuncional Pediátrica</p>
 
+  <h2 class="cidade">📍 Franca - SP</h2>
   <a id="beatriz" class="btn" href="https://l1nk.dev/beatrizmantovani" target="_blank">
-    WhatsApp Ft. Beatriz — Franca/SP
+    Ft. Beatriz — WhatsApp
   </a>
 
+  <h2 class="cidade">📍 Barretos - SP</h2>
   <a id="julia" class="btn" href="https://wa.me/55XXXXXXXXXXX" target="_blank">
-    WhatsApp Ft. Júlia — Barretos/SP
+    Ft. Júlia — WhatsApp
   </a>
 
   <a id="ana" class="btn" href="https://acesse.one/anacarol" target="_blank">
-    WhatsApp Ft. Ana Carolina — Barretos/SP
+    Ft. Ana Carolina — WhatsApp
   </a>
 
   <script>
@@ -75,7 +95,7 @@
       document.getElementById("beatriz").style.display = "block";
     }
 
-    // Ft. Júlia: sem horário definido
+    // Ft. Júlia: sempre visível
     document.getElementById("julia").style.display = "block";
 
     // Ft. Ana Carolina: 9–11h e 13–15h
